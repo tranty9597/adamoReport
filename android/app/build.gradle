@@ -75,6 +75,7 @@ import com.android.build.OutputFile
 project.ext.react = [
     entryFile: "index.js"
 ]
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 apply from: "../../node_modules/react-native/react.gradle"
 
@@ -137,6 +138,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-cardview')
     implementation project(':react-native-linear-gradient')
     implementation project(':react-native-languages')
     implementation project(':react-native-i18n')

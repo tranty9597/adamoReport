@@ -4,7 +4,7 @@ import {
     Notification,
     Dashboard,
     Message,
-    RestaurantList,
+    // RestaurantList,
     PasswordSetting
 } from '../../screens'
 
@@ -19,7 +19,7 @@ const mainBottomTabRoutes = {
     Profile,
     Message,
     Notification,
-    RestaurantList
+    // RestaurantList
 }
 
 
