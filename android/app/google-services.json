@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "465994117155",
+    "firebase_url": "https://mobilereport-63375.firebaseio.com",
+    "project_id": "mobilereport-63375",
+    "storage_bucket": "mobilereport-63375.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465994117155:android:28b922964574f950",
+        "android_client_info": {
+          "package_name": "com.mobilereport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465994117155-ss3ooekcbsb6q8l5dqib2k8p675vdhjg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXFWC5u3uLm3yNMiarA9bW0vkktsvFaBM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
