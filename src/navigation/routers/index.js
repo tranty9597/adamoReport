@@ -1,26 +1,19 @@
 import {
-    LoginAndRegister,
-    Profile,
     Notification,
     Dashboard,
     Message,
-    // RestaurantList,
-    PasswordSetting
+    Login
 } from '../../screens'
 
 const authRoutes = {
-    // Landing,
-    LoginAndRegister,
-    PasswordSetting
+    Login
 }
 
-const mainBottomTabRoutes = {
+const stackAppRouters = {
     Dashboard,
-    Profile,
     Message,
-    Notification,
-    // RestaurantList
+    Notification
 }
 
 
-export { authRoutes, mainBottomTabRoutes }
+export { authRoutes, stackAppRouters }

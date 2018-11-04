@@ -1,17 +1,14 @@
-/**
- * 
- */
 import React from 'react'
-import { Text } from 'react-native'
+import { Image, Text } from 'react-native'
 
 import { Header } from '../../common'
 
 // import {  } from './components'
 import { Container } from '../../layouts';
 import { Color } from '../../values';
-import Icon from 'react-native-vector-icons/FontAwesome';
 
-class Landing extends React.Component {
+
+class Login extends React.Component {
 
     constructor(props) {
         super(props);
@@ -20,11 +17,12 @@ class Landing extends React.Component {
 
     render() {
         return (
-            <Container header={<Header />}  style={{ backgroundColor: Color.whiteGray }}>
-                <Text> Landing</Text>
+            <Container header={<Header />} style={{ backgroundColor: Color.whiteGray }}>
+
+                <Text> Login</Text>
             </Container>
         )
     }
 }
 
-export default Landing;
+export default Login;

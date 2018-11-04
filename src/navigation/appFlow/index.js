@@ -1,12 +1,12 @@
 import { createDrawerNavigator } from 'react-navigation'
 
-import MainBottomTabFlow from './mainBottomTabFlow'
+import AppStackFlow from './appStack'
 
 import SideBar from './sideBar'
 
 const AppFlow = createDrawerNavigator(
     {
-        MainBottomTabFlow
+        AppStackFlow
     },
     {
         contentComponent: SideBar

@@ -5,7 +5,7 @@ import { authRoutes } from "../routers"
 const AuthenFlow = createStackNavigator(
     authRoutes,
     {
-        initialRouteKey: 'LoginAndRegister',
+        initialRouteKey: 'Login',
         navigationOptions: {
             header: null,
 
