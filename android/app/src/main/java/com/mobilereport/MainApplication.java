@@ -3,6 +3,7 @@ package com.mobilereport;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.kishanjvaghela.cardview.RNCardViewPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.reactcommunity.rnlanguages.RNLanguagesPackage;
@@ -29,6 +30,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new SplashScreenReactPackage(),
             new RNCardViewPackage(),
             new LinearGradientPackage(),
             new RNLanguagesPackage(),

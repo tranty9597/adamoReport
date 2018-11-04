@@ -8,7 +8,7 @@
 
 import React from 'react';
 import { StatusBar } from 'react-native'
-// import SplashScreen from "react-native-splash-screen"
+import SplashScreen from "react-native-splash-screen"
 
 import { Provider } from 'react-redux'
 import store from './src/store'
@@ -21,7 +21,7 @@ class App extends React.Component {
 
   componentDidMount() {
     pushNotificationConfigue();
-    // SplashScreen.hide()
+    SplashScreen.hide()
   }
   render() {
     return (

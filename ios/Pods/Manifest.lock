@@ -59,6 +59,8 @@ PODS:
   - nanopb/encode (0.3.901)
   - React (0.57.4):
     - React/Core (= 0.57.4)
+  - react-native-splash-screen (3.1.1):
+    - React
   - React/Core (0.57.4):
     - yoga (= 0.57.4.React)
   - React/CxxBridge (0.57.4):
@@ -106,6 +108,7 @@ DEPENDENCIES:
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - GoogleAppMeasurement (~> 5.2.0)
+  - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
   - React/Core (from `../node_modules/react-native`)
   - React/CxxBridge (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
@@ -140,6 +143,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
+  react-native-splash-screen:
+    :path: "../node_modules/react-native-splash-screen"
   RNI18n:
     :path: "../node_modules/react-native-i18n"
   RNLanguages:
@@ -163,11 +168,12 @@ SPEC CHECKSUMS:
   GoogleUtilities: abb092d2c12e817fa3e0e7b274987dd72fb86ec3
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
+  react-native-splash-screen: 8e3f866dc79bfe533baeffd0a38c33f7a7eae7f8
   RNI18n: 46b8694063fbd699f2c06a4dc8e835b3176763b1
   RNLanguages: e3ae05ef105937645218272429dac0c3f7633451
   RNVectorIcons: 8c52e1e8da1153613fdef44748e865c25556cb9c
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: 1c1ace05b251d26f4c37c67670b4ff8227a0d296
+PODFILE CHECKSUM: 08b75681fcf15bc509c8c0c1daa5012b2a85ba09
 
 COCOAPODS: 1.5.3
