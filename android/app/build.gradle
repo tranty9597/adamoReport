@@ -137,6 +137,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-i18n')
     implementation project(':react-native-push-notification')
     implementation project(':react-native-firebase')
     implementation "com.google.android.gms:play-services-base:${rootProject.ext.firebaseVersion}"
