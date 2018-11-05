@@ -6,6 +6,9 @@ const AppStackFlow = createStackNavigator(
     stackAppRouters,
     {
         initialRouteName: 'Dashboard',
+        navigationOptions:{
+            header: null
+        }
     }
 )
 
