@@ -1,6 +1,7 @@
 import React from 'react'
 import { Image, Text } from 'react-native'
 
+import * as Progress from 'react-native-progress';
 import { Header } from '../../common'
 
 // import {  } from './components'
@@ -19,7 +20,7 @@ class Login extends React.Component {
         return (
             <Container header={<Header />} style={{ backgroundColor: Color.whiteGray }}>
 
-                <Text> Login</Text>
+                <Progress.Pie progress={0.3} width={200} />
             </Container>
         )
     }

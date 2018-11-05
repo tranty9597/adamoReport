@@ -29,5 +29,7 @@ target 'Mobilereport' do
   pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
   pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+  
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
 
 end

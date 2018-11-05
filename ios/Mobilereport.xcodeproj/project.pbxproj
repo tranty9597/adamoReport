@@ -40,6 +40,7 @@
 		52422C1344A64FB9BA8EF8C7 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEE8A70EC72434ABE6BAFDE /* libRNFirebase.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		D6088405218FD42500EAEB2C /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D60883DA218FD41100EAEB2C /* libART.a */; };
 		D66765A3218F096400CA3631 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D66765A2218F096400CA3631 /* GoogleService-Info.plist */; };
 		D66766DD218F3C7800CA3631 /* libRCTPushNotification.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D66766C0218F3C6000CA3631 /* libRCTPushNotification.a */; };
 		D66766DF218F3D1000CA3631 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66766DE218F3D1000CA3631 /* GameKit.framework */; };
@@ -319,6 +320,20 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
+		D60883D9218FD41100EAEB2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D60883D4218FD41100EAEB2C /* ART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
+			remoteInfo = ART;
+		};
+		D60883DB218FD41100EAEB2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D60883D4218FD41100EAEB2C /* ART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 323A12871E5F266B004975B8;
+			remoteInfo = "ART-tvOS";
+		};
 		D66765E5218F0A3400CA3631 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CDE66154C45248AA8CF15BA5 /* RNFirebase.xcodeproj */;
@@ -372,6 +387,7 @@
 		84DE73680C435CAB4E3EA565 /* Pods-Mobilereport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobilereport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mobilereport/Pods-Mobilereport.debug.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		CDE66154C45248AA8CF15BA5 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
+		D60883D4218FD41100EAEB2C /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
 		D66765A2218F096400CA3631 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Mobilereport/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D66766AE218F3C6000CA3631 /* RCTPushNotification.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTPushNotification.xcodeproj; path = "../node_modules/react-native/Libraries/PushNotificationIOS/RCTPushNotification.xcodeproj"; sourceTree = "<group>"; };
 		D66766DE218F3D1000CA3631 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
@@ -392,6 +408,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6088405218FD42500EAEB2C /* libART.a in Frameworks */,
 				D66766DD218F3C7800CA3631 /* libRCTPushNotification.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
@@ -585,6 +602,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D60883D4218FD41100EAEB2C /* ART.xcodeproj */,
 				D66766AE218F3C6000CA3631 /* RCTPushNotification.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -655,6 +673,15 @@
 				7EC226203F5CF8B29CE4FC5F /* Pods-Mobilereport.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D60883D5218FD41100EAEB2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D60883DA218FD41100EAEB2C /* libART.a */,
+				D60883DC218FD41100EAEB2C /* libART-tvOS.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D66765BC218F0A3300CA3631 /* Recovered References */ = {
@@ -803,6 +830,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = D60883D5218FD41100EAEB2C /* Products */;
+					ProjectRef = D60883D4218FD41100EAEB2C /* ART.xcodeproj */;
+				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
@@ -1130,6 +1161,20 @@
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		D60883DA218FD41100EAEB2C /* libART.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libART.a;
+			remoteRef = D60883D9218FD41100EAEB2C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D60883DC218FD41100EAEB2C /* libART-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libART-tvOS.a";
+			remoteRef = D60883DB218FD41100EAEB2C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		D66765E6218F0A3400CA3631 /* libRNFirebase.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1421,6 +1466,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase",
 					"$(SRCROOT)/../node_modules/react-native/Libraries/PushNotificationIOS",
+					"$(SRCROOT)/../node_modules/react-native/Libraries/ART",
 				);
 				INFOPLIST_FILE = Mobilereport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1446,6 +1492,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase",
 					"$(SRCROOT)/../node_modules/react-native/Libraries/PushNotificationIOS",
+					"$(SRCROOT)/../node_modules/react-native/Libraries/ART",
 				);
 				INFOPLIST_FILE = Mobilereport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
