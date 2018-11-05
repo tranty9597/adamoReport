@@ -2,7 +2,11 @@ import {
     Notification,
     Dashboard,
     Message,
-    Login
+    Login,
+    SalesByCategory,
+    SalesByRestaurant,
+    TableLoading,
+    TableOccupancy
 } from '../../screens'
 
 const authRoutes = {
@@ -12,7 +16,11 @@ const authRoutes = {
 const stackAppRouters = {
     Dashboard,
     Message,
-    Notification
+    Notification,
+    SalesByCategory,
+    SalesByRestaurant,
+    TableLoading,
+    TableOccupancy
 }
 
 
