@@ -1,6 +1,6 @@
 import {
     Notification,
-    Dashboard,
+    Report,
     Message,
     Login,
     SalesByCategory,
@@ -14,7 +14,7 @@ const authRoutes = {
 }
 
 const stackAppRouters = {
-    Dashboard,
+    Report,
     Message,
     Notification,
     SalesByCategory,

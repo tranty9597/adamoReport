@@ -5,7 +5,7 @@ import { stackAppRouters } from '../../routers'
 const AppStackFlow = createStackNavigator(
     stackAppRouters,
     {
-        initialRouteName: 'Dashboard',
+        initialRouteName: 'Report',
         navigationOptions:{
             header: null
         }

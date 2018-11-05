@@ -42,16 +42,19 @@ function RenderBtn({ icon, onPress, isLeft, text }) {
 class Header extends React.PureComponent<HeaderProps> {
 
     render() {
-        let { rightText, leftText, title, leftIcon, rightIcon, colors, leftIconOnPress, rightIconOnPress } = this.props;
+        let { children, rightText, leftText, title, leftIcon, rightIcon, colors, leftIconOnPress, rightIconOnPress } = this.props;
         return (
 
             <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
                 <AppLinearGradient colors={colors} style={[styles.container]}>
-                    <RenderBtn text={leftText} isLeft icon={leftIcon} onPress={leftIconOnPress} />
-                    <Text style={[styles.titleContainer]}>
-                        {title}
-                    </Text>
-                    <RenderBtn text={rightText} icon={rightIcon} onPress={rightIconOnPress} />
+                    {children ||
+                        <React.Fragment>
+                            <RenderBtn text={leftText} isLeft icon={leftIcon} onPress={leftIconOnPress} />
+                            <Text style={[styles.titleContainer]}>
+                                {title}
+                            </Text>
+                            <RenderBtn text={rightText} icon={rightIcon} onPress={rightIconOnPress} />
+                        </React.Fragment>}
                 </AppLinearGradient>
             </TouchableWithoutFeedback>
         )

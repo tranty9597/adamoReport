@@ -8,5 +8,5 @@ export { default as Notification } from './notification'
 export { default as Login } from './login'
 
 
-export { default as Dashboard } from './dashboard'
+export { default as Report } from './report'
 export { default as Message } from './message'

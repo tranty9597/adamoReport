@@ -18,8 +18,8 @@ export default StyleSheet.create({
     },
     container: {
         width: '100%',
-        paddingRight: 30,
-        paddingLeft: 30,
+        paddingRight: 15,
+        paddingLeft: 15,
     },
     containerFluid: {
         width: '100%'
