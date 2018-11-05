@@ -25,7 +25,8 @@
     "react-navigation": "^2.18.2",
     "react-redux": "^5.1.0",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "victory-native": "^30.6.0"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
