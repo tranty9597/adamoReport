@@ -10,22 +10,47 @@ import React from 'react'
 import { TouchableOpacity, Text, Image, View, StyleSheet } from 'react-native'
 
 import { Sizes, AppStyle, Color } from '../../values'
+import { ChildItemRow } from './components'
 /**
  * @description stateless class
  * @param {*} param0 
  */
-function ItemRow({ leftIcon, rightIcon, title, onPress }) {
-    return (
-        <TouchableOpacity style={styles.container}>
-            {leftIcon && <View style={styles.icon}>
-                <Image source={leftIcon} />
-            </View>}
-            <Text style={styles.title}>{title}</Text>
-            {rightIcon && <View style={styles.icon}>
-                <Image source={rightIcon} />
-            </View>}
-        </TouchableOpacity>
-    )
+class ItemRow extends React.PureComponent {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isExpanded: false
+        };
+        this.renderChildItems = this.renderChildItems.bind(this)
+    }
+
+    renderChildItems() {
+        var childItems = [];
+        childItems = this.state.childItems;
+        return childItems.map((item) => {
+            return (
+                <ChildItemRow title={item}/>
+            );
+        });
+    }
+
+    render() {
+        let leftIcon = this.props.leftIcon;
+        let rightIcon = this.props.rightIcon;
+        let title = this.props.title;
+        return (
+            <TouchableOpacity style={styles.container} onPress={this.state.isExpanded = !this.state.isExpanded}>
+                {leftIcon && <View style={styles.icon}>
+                    <Image source={leftIcon} />
+                </View>}
+                <Text style={styles.title}>{title}</Text>
+                {rightIcon && <View style={styles.icon}>
+                    <Image source={rightIcon} />
+                </View>}
+                {this.state.isExpanded && this.renderChildItems()}
+            </TouchableOpacity>
+        )
+    }
 }
 
 const styles = StyleSheet.create({
@@ -48,4 +73,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default ItemRow
+export default ItemRow;
