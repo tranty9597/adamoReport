@@ -48,9 +48,8 @@ export default StyleSheet.create({
 
     },
     hr: {
-        borderBottomColor: Color.whiteGray,
-        borderBottomWidth: 3,
-        margin: Sizes.MD_GAP * 2,
+        borderBottomColor: Color.greyish,
+        borderBottomWidth: 1,
     },
     //Text
     smText: {
@@ -70,7 +69,7 @@ export default StyleSheet.create({
         fontWeight: '700',
     },
     lightWeight: {
-        fontWeight: '400'
+        fontWeight: '300'
     },
     mdWeight: {
         fontWeight: '600'

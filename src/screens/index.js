@@ -10,3 +10,4 @@ export { default as Login } from './login'
 
 export { default as Report } from './report'
 export { default as Message } from './message'
+export { default as RestaurantMonitoring } from './restaurantMonitoring'

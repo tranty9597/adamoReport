@@ -6,7 +6,8 @@ import {
     SalesByCategory,
     SalesByRestaurant,
     TableLoading,
-    TableOccupancy
+    TableOccupancy,
+    RestaurantMonitoring
 } from '../../screens'
 
 const authRoutes = {
@@ -14,6 +15,7 @@ const authRoutes = {
 }
 
 const stackAppRouters = {
+    RestaurantMonitoring,
     Report,
     Message,
     Notification,
