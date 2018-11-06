@@ -1,31 +1,18 @@
 import React from 'react'
-import { Image } from 'react-native'
+import { Image, Text } from 'react-native'
 
-import { Header, Tab } from '../../common'
-import { SeenList, UnseenList } from './components'
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+import { Header } from '../../common'
+
 
 import { Container } from '../../layouts';
 import { Color } from '../../values';
 
-import { strings } from '../../i18n'
-
-function SeenRoute(navigation) {
-    return () => <SeenList navigation={navigation} />
-}
-
-function UnseenRoute(navigation) {
-    return () => <UnseenList navigation={navigation} />
-}
-
-const ROUTES = [
-    { key: 'UnSeen', title: strings('message_unseen') },
-    { key: 'Seen', title: strings('message_seen') },
-]
-
 class Message extends React.Component {
     static navigationOptions = {
         tabBarIcon: (focused) => {
-            return <Image source={focused.focused ? require('../../assets/image/message/active.png') : require('../../assets/image/message/inactive.png')} />
+            return <Image source={focused.focused ? require('../../assets/image/noti/active.png') : require('../../assets/image/noti/inactive.png')} />
         }
     }
     constructor(props) {
@@ -34,19 +21,12 @@ class Message extends React.Component {
     }
 
     render() {
-        let header = (
-            <Header title={strings('message_title')} />
-        )
         return (
-            <Container header={header} style={{ backgroundColor: Color.whiteGray }}>
-                <Tab
-                    routes={ROUTES}
-                    router={{
-                        UnSeen: UnseenRoute(this.props.navigation),
-                        Seen: SeenRoute(this.props.navigation)
-
-                    }}
-                />
+            <Container header={<Header />}  style={{backgroundColor: Color.whiteGray}}>
+                <Text> Message</Text>
+                <Icon.Button name="facebook" backgroundColor="#3b5998">
+                    <Text style={{ fontFamily: 'Arial', fontSize: 15 }}>Login with Facebook</Text>
+                </Icon.Button>
             </Container>
         )
     }

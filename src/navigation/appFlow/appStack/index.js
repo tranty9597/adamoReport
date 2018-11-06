@@ -5,7 +5,7 @@ import { stackAppRouters } from '../../routers'
 const AppStackFlow = createStackNavigator(
     stackAppRouters,
     {
-        initialRouteName: 'RestaurantMonitoring',
+        initialRouteName: 'Notification',
         navigationOptions:{
             header: null
         }
