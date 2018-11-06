@@ -13,6 +13,9 @@ import { IconCircle } from '../../../../common';
 
 const DOTI_ICON = require('../../../../assets/image/notification/doti.png')
 const BLACK_UNION = require('../../../../assets/image/notification/Union.png')
+
+const LOCATION_ICON = require('../../../../assets/image/location/icon_location.png')
+const TIME_ICON = require('../../../../assets/image/notification/icon-clock.png')
 const HEIGHT = 120
 class NotifyIcon extends React.PureComponent {
     render() {
@@ -30,15 +33,15 @@ class NotifyIcon extends React.PureComponent {
                         <Text style={styles.content}>A significant clear for a city. Uhm I dont know this word, and i write something to test hear!</Text>
                         <View style={styles.bottom}>
                             <View style={styles.location} >
-                                <Image source={require('../../../../assets/image/location/icon_location.png')} />
+                                <Image source={LOCATION_ICON} />
                                 <View style={styles.textInline}>
-                                    <Text numberOfLines={1} style={styles.locationTxt}>Significant CLearrrrrrr s</Text>
+                                    <Text numberOfLines={1} style={styles.locationTxt}>Thaii restaurant</Text>
                                 </View>
 
                             </View>
 
                             <View style={styles.time} >
-                                <Image source={require('../../../../assets/image/location/icon_location.png')} />
+                                <Image source={TIME_ICON} />
                                 <View style={styles.textInline}>
                                     <Text>19h30 2018</Text>
                                 </View>
