@@ -25,11 +25,10 @@ class ItemRow extends React.PureComponent {
     }
 
     renderChildItems() {
-        var childItems = [];
-        childItems = this.state.childItems;
+        let { childItems } = this.props;
         return childItems.map((item) => {
             return (
-                <ChildItemRow title={item}/>
+                <ChildItemRow title={item} />
             );
         });
     }
@@ -39,16 +38,20 @@ class ItemRow extends React.PureComponent {
         let rightIcon = this.props.rightIcon;
         let title = this.props.title;
         return (
-            <TouchableOpacity style={styles.container} onPress={this.state.isExpanded = !this.state.isExpanded}>
-                {leftIcon && <View style={styles.icon}>
-                    <Image source={leftIcon} />
-                </View>}
-                <Text style={styles.title}>{title}</Text>
-                {rightIcon && <View style={styles.icon}>
-                    <Image source={rightIcon} />
-                </View>}
+            <React.Fragment>
+                <TouchableOpacity style={styles.container} onPress={() => this.setState({ isExpanded: !this.state.isExpanded })}>
+                    {leftIcon && <View style={styles.icon}>
+                        <Image source={leftIcon} />
+                    </View>}
+                    <Text style={styles.title}>{title}</Text>
+                    {rightIcon && <View style={styles.icon}>
+                        <Image source={rightIcon} />
+                    </View>}
+
+                </TouchableOpacity>
                 {this.state.isExpanded && this.renderChildItems()}
-            </TouchableOpacity>
+            </React.Fragment>
+
         )
     }
 }
